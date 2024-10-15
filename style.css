@@ -265,15 +265,7 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
+/* Featured Projects */
 .featured-projects{
     font-size: 20px;
     text-align: center;
@@ -322,6 +314,37 @@ body {
     background-color: black;
     cursor: pointer;
 }
+/* Featured Projects Responsive */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .skill-section{
     padding: 30px;
