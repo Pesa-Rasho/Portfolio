@@ -8,6 +8,7 @@ body {
 
     background-color: #EAEAEA;
     margin: 0;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -25,7 +26,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     color: white;
 }
-
 
 .header-container h1 {
     font-size: 30px;
@@ -292,6 +292,7 @@ body {
 .project-container img{
     width: 400px;
     height: 250px;
+    object-fit: cover;
 }
 
 .project-card h3{
@@ -307,6 +308,7 @@ body {
     font-size: 15px;
     padding: 15px;
     border-radius: 25px;
+    display: inline-block;
 }
 
 .view-more:hover{
@@ -314,8 +316,63 @@ body {
     background-color: black;
     cursor: pointer;
 }
-/* Featured Projects Responsive */
 
+/* Featured Projects Responsive */
+@media (max-width: 768px) {
+    .featured-projects {
+        margin-right: 0;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .project-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-card { 
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .view-more {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .featured-projects {
+        margin-right: 0;
+    }
+
+    .project-container {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .project-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .view-more {
+        font-size: 13px;
+        padding: 8px;
+        width: 100%;
+    }
+}
 
 
 
