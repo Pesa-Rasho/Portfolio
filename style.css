@@ -44,15 +44,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-
 /* Hero Section */
 .hero-container{
     width: 100%;
@@ -326,7 +317,7 @@ body {
 }
 
 .skills-section{
-    background-color: #eeeded;
+    background-color: #a69b9b;
     padding-top: 50px;
 }
 
@@ -371,7 +362,6 @@ body {
 }
 
 .development-philosophy-section{
-    margin-top: 50px;
     text-align: center;
     background-color: #c7c3c3;
     margin-bottom: 0;
@@ -1092,7 +1082,7 @@ input[type="radio"] {
         display: flex;
         flex-direction: row;
         padding: 10px;
-        padding-top: 2000pc;
+        padding-top: 20px;
     }
 
     .hero-container-img {
@@ -1180,6 +1170,9 @@ input[type="radio"] {
         align-items: center;
     }
 
+    .social-icons h1 {
+        text-align: center;
+    }
     .social-icons img {
         width: 24px;
     }
@@ -1203,19 +1196,138 @@ input[type="radio"] {
 
     .about-container {
         flex-direction: column;
-        align-items: center;
         margin-bottom: 30px;
+        align-items: justify;
+    }
+    .about-container-paragraph {
         padding: 10px;
     }
 
     .about-container-paragraph h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .about-container-paragraph p {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
     }
-}
 
+    .about-container-paragraph h3 {
+        font-size: 20px;
+    }
+
+    .about-container-paragraph li {
+        font-size: 18px;
+    }
+
+    .about-container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-container-img img {
+        border: 1px solid #000000;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .skills-section h1 {
+        font-size: 30px;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .skills-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills-card p {
+        font-size: 16px;
+    }
+
+    .development-philosophy-section { 
+        display: none; 
+    }
+
+    .projects-container{
+        display: inline-block;
+        background-color: #dfd3d3;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .slider-container .slide{
+        display: none;
+    }
+
+    .projects-card-description {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .projects-card-description h1{
+        font-size: 20px;
+    }
+    .projects-card-description p{
+        font-size: 16px;
+    }
+
+    .slider-container {
+        display: none;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(1,1fr);
+        padding-bottom: 20px;
+    }
+
+    .contact-container p{
+        font-size: 14px;
         
+    }
+
+    .form-group label{
+        font-size: 14px;
+    }
+
+    .contact-container {
+        padding: 5px;
+    }
+
+    .form-group input, .form-group textarea {
+        width: 300px;
+    }
+
+    .contact-container button{
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .blog-page-container {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .blog-page-container h1 {
+        font-size: 30px;
+    }
+
+    .blog-page-container h2 {
+        font-size: 20px;
+    }
+
+    .blog-page-container p {
+        font-size: 16px;
+    }
+}
