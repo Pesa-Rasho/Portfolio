@@ -132,8 +132,8 @@ body {
 }
 
 .about-container-img img{
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     object-fit: cover;
 }
 
