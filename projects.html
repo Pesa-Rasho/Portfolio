@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="Stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
+
+    <!-- Header -->
     <section class="header-container">
         <h1>Pesa</h1>
         <nav class="nav-container">
@@ -18,6 +19,7 @@
         </nav>
     </section>
 
+    <!-- Projects container -->  
     <section class="projects-container">
         <h1 class="heading">Projects I have done</h1>
         <div class="projects-card" id="project-1">
@@ -106,56 +108,125 @@
         </div>
     </section>
 
+    <!-- Blogs Section --> 
     <section class="blog-section">
         <h1 class="heading">Discover my blogs</h1>
         <div class="blog-container">
             <div class="blog-card">
                 <img src="/images/blog1.png" alt="Blog 1">
                 <div class="blog-card-description">
-                    <h1>My Journey into Full Stack Development</h1>
-                    <p>In this post, I reflect on my path to becoming a full stack developer. I discuss the initial challenges I faced, the key technologies I learned—such as HTML, CSS, JavaScript, and backend frameworks—and how I overcame obstacles along the way. This journey highlights the importance of perseverance and continuous learning in the tech field.</p>
-                    <a class="load-more" href="/blogs/blog1.html">Load More</a>
+                    <h1>Understanding HTML5 Semantic Elements</h1>
+                    <p>HTML5 introduced sementic tags that describe the purpose clearly, like header, main and footer. These tags make HTML easier to read and help browsers, search engines, and assistive tools understand content better.</p>
+                    <br><br>
+                    <h3>Why use Sementic Elements?</h3>
+                    <ol>
+                        <li>Accessibility: Screen readers can navigate a page more easily.</li>
+                        <li>SEO: Search engines use Semantic Tags to improve indexing.</li>
+                        <li>Code Clarity: Makes HTML more readable and manageable.</li>
+                    </ol>
+                    <br><br>
+                    <h3>Examples of Semantic Elements</h3>
+                    <ul>
+                        <li>&lt;header&lt;: For top-of-page content, like logos and navigation.</li>
+                        <li>&lt;main&lt;: Holds the main content of the page.</li>
+                        <li>&lt;footer&lt;: For bottom content.</li>
+                    </ul>
+                    <br>
+                    <time datetime="2024-10-30">October 30, 2024</time>
                 </div>
             </div>
 
             <div class="blog-card">
-                <img src="/images/blog2.jpeg" alt="Blog 2">
+                <img src="/images/blog2.png" alt="Blog 2">
                 <div class="blog-card-description">
-                    <h1>Top 10 Tips for Creating a Stunning Portfolio Website</h1>
-                    <p>Crafting an impressive portfolio is crucial for showcasing your skills and projects. In this article, I share ten essential tips, including choosing the right design, optimizing for performance, and including case studies that highlight your work. These strategies will help you create a visually appealing and user-friendly portfolio that stands out to potential employers or clients.</p>
-                    <a class="load-more" href="/blogs/blog2.html">Load More</a>
+                    <h1>Responsive Design: The Key to Modern , User-Friendly websites</h1>
+                    <p>In the today's digital world people use different devices such as desktops, tablets, and smartphones. Responsive design ensures that the website works well across a variety of devices.</p>
+                    <br>
+                    <h3>What is Responsive Design</h3>
+                    <p>Responsive design allows a webpage to adapt to different screen sizes. This adjusts layouts, images, and fonts. Responsive design uses flexible grids, media queries to ensure content looks good everywhere.</p>
+                    <br>
+                    <h3>Why is Responsive Design Important</h3>
+                    <ol>
+                        <li>Better user experience: Uses stay longer on sites that are easy to navigate on any device.</li>
+                        <li>SEO Boost: Searc engines favor mobile-friendly websites.</li>
+                        <li>Future-Proof: Responsive sites adapt to new devices automatically.</li>
+                    </ol>
+                    <br>
+                    <h3>Key principles of responsive design</h3>
+                    <ol>
+                        <li>Fluid Grids: In responsive design, layouts are created using fluid grids. Instead of fixed units like pixels, fluid grids use relative units such as percentages. This allows the elements on the page to resize and rearrange themselves based on the screen size.</li>
+                        <li>Flexible Images: Images in responsive design should scale up or down depending on the device. This can be achieved using CSS to set the maximum width to 100%, allowing images to resize dynamically.</li>
+                        <li>Media Queries: Media queries are the backbone of responsive web design. They allow you to apply different styles depending on the screen width, height, or device orientation.</li>
+                        <li>Viewport Meta Tag: To make sure your website displays properly on mobile devices, include the following meta tag in your HTML file. It ensures that the page scales to fit the screen.</li>
+                    </ol>
+                    <br>
+                    <time datetime="2024-10-30">October 30, 2024</time>
                 </div>
             </div>
 
             <div class="blog-card">
-                <img src="/images/blog3.png" alt="Blog 3">
+                <img src="/images/blog3.jpg" alt="Blog 3">
                 <div class="blog-card-description">
-                    <h1>A Beginner's Guide to Responsive Web Design</h1>
-                    <p>Responsive web design ensures that websites function well on various devices and screen sizes. In this beginner-friendly guide, I explain the fundamental principles of responsive design, including fluid grids, flexible images, and media queries. I also provide practical examples and tools to help you implement responsive design in your own projects.</p>
-                    <a class="load-more" href="/blogs/blog3.html">Load More</a>
+                    <h1>Flexbox in CSS: Mastering Layout with Flex Directions</h1>
+                    <p>Flexbox is a powerful CSS layout tool designed to create flexible and responsive layouts. Flexbox provides properties that help control the position, alignment, and spacing of items on the page.</p>
+                    <br>
+                    <h3>Key Flexbox properties</h3>
+                    <ol>
+                        <li>flex-direction: Sets the direction items are placed in the flex container.</li>
+                        <li>flex-wrap: Controls wrapping when items don't fit in one line.</li>
+                        <li>order: Adjusts order of items within a container.</li>
+                        <li>flex-basis: Sets the initial size of an item before other properties apply.</li>
+                    </ol>
+                    <br>
+                    <time datetime="2024-10-30">October 30, 2024</time>
                 </div>
             </div>
 
             <div class="blog-card">
                 <img src="/images/blog4.png" alt="Blog 4">
                 <div class="blog-card-description">
-                    <h1>Understanding Version Control: A Guide to Git and GitHub</h1>
-                    <p>Version control is vital for developers, enabling collaboration and project management. This post offers an overview of Git and GitHub, explaining their importance in tracking changes, managing code, and collaborating with teams. I share basic commands, tips for effective branching, and resources for mastering version control, making it easier for beginners to get started.</p>
-                    <a class="load-more" href="/blogs/blog4.html">Load More</a>
+                    <h1>Understanding CSS Specificity: The Power behind style priority</h1>
+                    <p>CSS specificity determines which styles are applied when multiple CSS rules target the same elements. Specificity helps to write cleaner, conflict-free styles and understand why some styles take priority over others.</p>
+                    <br>
+                    <h3>How CSS specificity works</h3>
+                    <p>Specificity is a score CSS assigns to each selector type.</p>
+                    <ol>
+                        <li>Inline Styles have the highest priority.</li>
+                        <li>IDs have strong priority after inline.</li>
+                        <li>Classes, Attrinbutes, and Pseudp-Classes come next.</li>
+                        <li>Elements and Pseudo-Elements have the lowest specificity.</li>
+                    </ol>
+                    <h3>Calculating Specificity</h3>
+                    <ul>
+                        <li>Element = 0,0,0,1</li>
+                        <li>Class = 0,0,1,0</li>
+                        <li>ID = 0,1,0,0</li>
+                    </ul>                  
+                    <br>
+                    <time datetime="2024-10-30">October 30, 2024</time>
                 </div>
             </div>
 
             <div class="blog-card">
                 <img src="/images/blog5.png" alt="Blog 5">
                 <div class="blog-card-description">
-                    <h1>Exploring the Latest Trends in Web Development</h1>
-                    <p>The web development landscape is constantly evolving. In this article, I delve into the latest trends, such as JAMstack architecture, serverless computing, and the growing popularity of static site generators. I discuss how these trends are shaping the industry, the benefits they offer, and what developers should consider when adopting these technologies for their projects.</p>
-                    <a class="load-more" href="/blogs/blog5.html">Load More</a>
+                    <h1>Exploring CSS Gradients: From basics to beautiful background</h1>
+                    <p>Gradients in CSS are smooth transitions of two or more colors. Gradients can be used to give visual appeal to web designs. It can enhance aesthetics without needing images.</p>
+                    <br>
+                    <h3>Two Types of Gradient</h3>
+                    <p>There two types of gradient.</p>
+                    <ol>
+                        <li>Linear gradient: Colors transition in a straight line. eg: <b>background: linear-gradient(to right, blue, green);</b></li>
+                        <li>Radial gradient: Colors radiate outward from a central point. eg: <b>background: linear-gradient(45deg, blue, green);</b></li>
+                    </ol>
+                    <br>
+                    <time datetime="2024-10-30">October 30, 2024</time>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer Section -->
     <section class="footer-section">
         <div class="footer-container">
             <div class="social-icons">

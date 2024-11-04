@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #eaeaea, #625962);
+    background: linear-gradient(to right, #eaeaea, #625962); /* Creates a gradient background */
     overflow-x: hidden;
     margin: 0;
 }
@@ -39,6 +39,7 @@ body {
     padding-right: 35px;
 }
 
+/*Targetting the direct children of nav-container*/
 .nav-container > a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -74,9 +75,10 @@ body {
 
 .hero-container-paragraph h3{
     font-size: 45px;
-    text-shadow: 1px 1px 3px rgb(72, 70, 70);
+    text-shadow: 1px 1px 3px rgb(72, 70, 70); /*Text shadow effect*/
 }
 
+/*Adding the quotes before hero list. Generated content*/
 .hero-list::before {
     content: "“";
     font-size: 2.5em;
@@ -84,6 +86,7 @@ body {
     padding-right: 5px;
 }
 
+/*Adding the quotes after hero list*/
 .hero-list:after {
     content: "”";
     font-size: 2.5em;
@@ -109,7 +112,8 @@ body {
     font-size: 20px;
     margin-left: 200px;
     padding: 15px;
-    border-radius: 25px;
+    border: 2px solid black; /*Border for the button*/
+    border-radius: 25px; /*Rounded corners*/
 }
 
 .view-work:hover{
@@ -153,6 +157,7 @@ body {
     font-weight: 500;
 }
 
+/*Adding specific styles for the third child of the paragraph*/
 .about-container-paragraph p:nth-child(3){
     font-size: 20px;
     font-weight: 500;
@@ -242,7 +247,7 @@ body {
     height: 400px;
     max-width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 1.5s cubic-bezier(0.7, -.5, 0.3, 1.8);
+    transition: all 1.5s cubic-bezier(0.7, -.5, 0.3, 1.8);  /*Applies a cubic-bezier easing function*/
     transform-style: preserve-3d;
     border-radius: 50px;
     background-color: #ffffff;
@@ -255,9 +260,10 @@ body {
     border-radius: 50px;
 }
 
+/*Hover effect*/
 .skills-card:hover{
-    transform: rotateY(180deg);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transform: rotateY(180deg); /*Traansforms the card to the back side by 180degrees*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /*Adds a shadow effect*/
     cursor: pointer;
 }
 
@@ -381,6 +387,7 @@ body {
     flex: 1 0 100%;
 }
 
+/*Attribute selectors for radio buttons*/
 input[type="radio"] {
     display: none;
 }
@@ -413,6 +420,7 @@ input[type="radio"] {
     display: flex;
 }
 
+/*Relational selectors for radio buttons*/
 .slider-nav label {
     width: 10px;
     height: 10px;
@@ -446,6 +454,7 @@ input[type="radio"] {
 .projects-card:not(#project-1){
     background-color: #f2f2f2;
 }
+
 .projects-card-image img{
     width: 500px;
     height: 300px;
@@ -469,7 +478,7 @@ input[type="radio"] {
 
 /*Blog Section styles*/
 .blog-section .heading{
-    font-size: 35px;
+    font-size: 40px;
     padding-top: 50px;
     text-align: center;
 }
@@ -491,25 +500,9 @@ input[type="radio"] {
     background-color: #c2bfbf;
 }
 
+/*nth psudo class for odd*/
 .blog-card:nth-child(odd) {
     background-color: #dddcdc;
-}
-
-.load-more{
-    display: inline-block;
-    padding: 20px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #000000;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 20px;
-}
-
-.load-more:hover{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
 }
 
 .blog-card img{
@@ -518,7 +511,14 @@ input[type="radio"] {
     object-fit: cover;
 }
 
+.blog-card-description h1{
+    text-align: center;
+}
 
+/*Child combinator for list items*/
+.blog-card-description ol > li, ul > li{
+    line-height: 30px;
+}
 
 /*Contact Page Styles*/
 .contact-container {
@@ -585,7 +585,14 @@ button[type="submit"]:hover {
     background-color: #333;
     color: #fff;
 }
-  
+
+
+/*Psudo class validation*/
+.form-group input:valid{
+    background-color: rgb(8, 8, 8);
+    border: 5px solid rgb(20, 253, 20);
+    color: white;
+}
 
 
 /*Footer*/
@@ -649,6 +656,7 @@ button[type="submit"]:hover {
     cursor: pointer;
 }
 
+/*Validity psudo classes*/
 .news-letter input:invalid{
     border: 2px solid red;
     background-color: rgb(255, 255, 255);
@@ -663,6 +671,8 @@ button[type="submit"]:hover {
 
 
 /*Media Queries*/
+
+/*4k Display*/
 @media only screen and (min-width : 2560px){
     .header-container{
         width: 100%;
@@ -854,6 +864,7 @@ button[type="submit"]:hover {
     }
 }
 
+/*Tablet*/
 @media only screen and (width : 768px){
     .hero-container{
         display: flex;
@@ -965,6 +976,7 @@ button[type="submit"]:hover {
     }
 }
 
+/* Mobile */
 @media only screen and (max-width : 426px){
     .header-container {
        width: 100%;
@@ -1177,6 +1189,9 @@ button[type="submit"]:hover {
         margin-top: 10px;
     }
 
+    .about-container-paragraph{
+        padding-left: 0;
+    }
     .about-container-img{
         display: none;
     }
