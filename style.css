@@ -39,7 +39,7 @@ body {
     padding-right: 35px;
 }
 
-/*Targetting the direct children of nav-container*/
+/*Targeting the direct children of nav-container*/
 .nav-container > a{
     text-decoration: none;
     color: rgb(255, 255, 255);
