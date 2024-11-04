@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #eaeaea, #272327);
+    background: linear-gradient(to right, #eaeaea, #625962);
     overflow-x: hidden;
     margin: 0;
 }
@@ -39,11 +39,16 @@ body {
     padding-right: 35px;
 }
 
-.nav-container a{
+.nav-container > a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
+.nav-container > a:hover{
+    color: rgb(102, 101, 101);
+}
+
+/*Home page styles*/
 /* Hero Section */
 .hero-container{
     width: 100%;
@@ -70,6 +75,20 @@ body {
 .hero-container-paragraph h3{
     font-size: 45px;
     text-shadow: 1px 1px 3px rgb(72, 70, 70);
+}
+
+.hero-list::before {
+    content: "“";
+    font-size: 2.5em;
+    color: #121212;
+    padding-right: 5px;
+}
+
+.hero-list:after {
+    content: "”";
+    font-size: 2.5em;
+    color: #000000;
+    padding-left: 5px;
 }
 
 .less-bold{
@@ -100,6 +119,51 @@ body {
 }
 
 
+/* About Me  Page styles*/
+/* About section  Page styles*/
+.about-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-container-img img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.about-container-paragraph{
+    padding-top: 50px;
+    padding-left: 100px;
+    word-spacing: 5px;
+}
+
+.about-container-paragraph h1{
+    font-size: 30px;
+}
+
+.about-container-paragraph h3{
+    font-size: 30px;
+    text-shadow: 1px 1px 3px rgb(72, 70, 70);
+}
+
+.about-container-paragraph p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-container-paragraph p:nth-child(3){
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-container-paragraph li{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
 /* Featured Projects */
 .featured-projects{
     font-size: 20px;
@@ -112,8 +176,7 @@ body {
 
 .project-container{
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: space-around;
     margin-top: 50px;
     margin-left: 25px;
     margin-right: 25px;
@@ -154,124 +217,6 @@ body {
 }
 
 /* Skills Section */
-.skill-section{
-    padding: 10px;
-    background-color: white;
-}
-
-.skill-section h1{
-    font-size: 30px;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 80px;
-}
-
-.skill-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.skill-card{
-    border: 2px solid black;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.skill-card img{
-    width: 100px;
-    height: auto;
-    margin: 20px;
-}
-
-.skill-card-description{
-    margin-left: 20px;
-}
-
-.skill-card-description button{
-    margin-top: auto;
-    font-size: 15px;
-    padding: 15px;
-    border-radius: 25px;
-    align-self: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.skill-card-description button:hover{
-    color: white;
-    background-color: black;
-    cursor: pointer;
-}
-
-/*Footer*/
-.footer-section{
-    padding: 5px 10px 25px 25px;
-    background-color: rgb(182, 181, 181);
-}
-
-.footer-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.social-icons h1{
-    display: flex;
-    flex-direction: column;
-}
-
-.social-icons img{
-    width: 30px;
-    height: auto;
-    margin-left: 20px;
-}
-
-.quick-links{
-    display: flex;
-    flex-direction: column;;
-}
-
-.quick-links a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    line-height: 50px;
-}
-
-.footer-section p{
-    text-align: center;
-}
-
-.news-letter input{
-    font-size: 15px;
-    padding: 10px;
-    width: 300px;
-    margin-top: 20px;
-    margin-right: 20px;
-    border-radius: 5px;
-}
-
-.news-letter button{
-    font-size: 15px;
-    padding: 15px;
-    border-radius: 25px;
-    margin-top: 10px;
-}
-
-.news-letter button:hover{
-    color: white;
-    background-color: black;
-    cursor: pointer;
-}
-
 .skills-section{
     padding-top: 50px;
     background-color: #ABB4B8;
@@ -344,14 +289,44 @@ body {
     font-size: 20px;
 }
 
+.hobbies-section{
+    padding-top: 50px;
+    background-color: #ABB4B8;
+    text-align: center;
+}
+
+.hobbies-section h1{
+    font-size: 35px;
+    
+}
+
+.hobby-card{
+    margin-bottom: 50px;
+}
+
+.hobby-card img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.hobby-card p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+/*Project Page styles*/
+/* Projects Section*/
 .projects-container {
     background-color: #ABB4B8;
 }
+
 .projects-card{
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
-    margin-right: 25px ;
 }
 
 .slider-container{
@@ -429,18 +404,6 @@ input[type="radio"] {
 #slide5:checked ~ .slides {
     transform: translateX(-400%);
 }
-#slide6:checked ~ .slides {
-    transform: translateX(-500%);
-}
-#slide7:checked ~ .slides {
-    transform: translateX(-600%);
-}
-#slide8:checked ~ .slides {
-    transform: translateX(-700%);
-}
-#slide9:checked ~ .slides {
-    transform: translateX(-800%);
-}
 
 .slider-nav { 
     position: absolute;
@@ -463,11 +426,7 @@ input[type="radio"] {
 #slide2:checked ~ .slider-nav label[for="slide2"],
 #slide3:checked ~ .slider-nav label[for="slide3"],
 #slide4:checked ~ .slider-nav label[for="slide4"],
-#slide5:checked ~ .slider-nav label[for="slide5"],
-#slide6:checked ~ .slider-nav label[for="slide6"],
-#slide7:checked ~ .slider-nav label[for="slide7"],
-#slide8:checked ~ .slider-nav label[for="slide8"], 
-#slide9:checked ~ .slider-nav label[for="slide9"]{
+#slide5:checked ~ .slider-nav label[for="slide5"]{
     background-color: #9f9f9f;
 }
 
@@ -480,8 +439,19 @@ input[type="radio"] {
 }
 
 .projects-card-description h1{
-    argin-top: 0;
+    margin-top: 0;
     font-size: 30px;
+}
+
+.projects-card:not(#project-1){
+    background-color: #f2f2f2;
+}
+.projects-card-image img{
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
 }
 
 .projects-card-description li{
@@ -496,6 +466,61 @@ input[type="radio"] {
     font-size: 40px;
 }
 
+
+/*Blog Section styles*/
+.blog-section .heading{
+    font-size: 35px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.blog-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.blog-card{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #c2bfbf;
+}
+
+.blog-card:nth-child(odd) {
+    background-color: #dddcdc;
+}
+
+.load-more{
+    display: inline-block;
+    padding: 20px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #000000;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.load-more:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.blog-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+/*Contact Page Styles*/
 .contact-container {
     width: 100%;
     max-width: 600px;
@@ -546,54 +571,98 @@ input[type="radio"] {
     background-color: #000000;
     color: white;
 }
+
+.form-group:nth-child(odd) input,
+.form-group:nth-child(odd) textarea {
+    background-color: #dddddd;
+}
+
+.form-group:first-child label {
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+}
   
 
-.blog-section .heading{
-    font-size: 35px;
-    padding-top: 50px;
-    text-align: center;
+
+/*Footer*/
+.footer-section{
+    padding: 5px 10px 25px 25px;
+    background-color: rgb(182, 181, 181);
 }
 
-.blog-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
-    grid-gap: 40px;
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.blog-card{
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 15px;
-    background-color: #c2bfbf;
+.social-icons h1{
+    display: flex;
+    flex-direction: column;
 }
 
-.load-more{
-    display: inline-block;
-    padding: 20px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #000000;
-    text-align: center;
+.social-icons img{
+    width: 30px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.quick-links{
+    display: flex;
+    flex-direction: column;;
+}
+
+.quick-links a{
     text-decoration: none;
-    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 50px;
 }
 
-.load-more:hover{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+.footer-section p{
+    text-align: center;
+}
+
+.news-letter input{
+    font-size: 15px;
+    padding: 10px;
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.news-letter button{
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.news-letter button:hover{
+    color: white;
+    background-color: black;
     cursor: pointer;
 }
 
-.blog-card img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.news-letter input:invalid{
+    border: 2px solid red;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
 }
 
+.news-letter input:valid{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+
+/*Media Queries*/
 @media only screen and (min-width : 2560px){
     .header-container{
         width: 100%;
@@ -738,7 +807,6 @@ input[type="radio"] {
     .projects-card-description p{
         font-size: 30px;
     }
-
 
     .projects-card-description h3{
         font-size: 40px;
@@ -886,7 +954,15 @@ input[type="radio"] {
         font-size: 16px;
     }
 
+    .about-container-img{
+        display: none;
+    }
 
+    .about-container-paragraph {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width : 426px){
@@ -1066,7 +1142,10 @@ input[type="radio"] {
     .projects-card-description p{
         font-size: 16px;
     }
-
+    .projects-card-image img{
+        display: none;
+    }
+    
     .slider-container {
         display: none;
     }
@@ -1096,6 +1175,16 @@ input[type="radio"] {
     .contact-container button{
         width: 200px;
         margin-top: 10px;
+    }
+
+    .about-container-img{
+        display: none;
+    }
+
+    .hobby-card img{
+        width: 300px;
+        height: auto;
+        object-fit: contain;
     }
 
 }
